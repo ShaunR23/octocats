@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    overflow: break-word;  
+    word-break: break-all;
+    
+}
+ul{
+    list-style: none;
+}
+
+.octodex{
+    display: inline-block;
+    margin: auto;
+    
+    
+}
+
+img[src*="sarito"]{
+    width: 300px;
+    border-style: solid;
+    border-color:gainsboro;
+    border-width: thin;
+    position: relative;
+    top: 370px;
+
+}
+
+img[src*=topgun]{
+    width: 300px;
+    border-style: solid;
+    border-color:gainsboro;
+    border-width: thin;
+    position:relative;
+    left:320px;
+    bottom: 5px;
+}
+
+img[src*="carlostocat"]{
+    width: 300px;
+    border-style: solid;
+    border-color:gainsboro;
+    border-width: thin;
+    position: relative;
+    left: 640px;
+    bottom: 379px;
+}
+img[src*="jeejkang"]{
+
+}
+
+.authors img{
+    width: 30px;
+}
+
+.image-number{
+    position:relative;
+    left: 320px
+}
