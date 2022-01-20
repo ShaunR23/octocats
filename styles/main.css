@@ -10,18 +10,32 @@ ul{
 
 .octodex{
     display: inline-block;
-    margin: auto;
-    
     
 }
 
-img[src*="sarito"]{
+.octocat{
+display: inline-block;
+width: 20%
+   
+}
+
+.octocat img{
+    max-width:100% ;
+    border-style: solid;
+    border-color:gainsboro;
+    border-width: thin;
+}
+    
+    
+
+
+/* img[src*="sarito"]{
     width: 300px;
     border-style: solid;
     border-color:gainsboro;
     border-width: thin;
-    position: relative;
-    top: 370px;
+    position: absolute;
+    top:70px
 
 }
 
@@ -30,9 +44,9 @@ img[src*=topgun]{
     border-style: solid;
     border-color:gainsboro;
     border-width: thin;
-    position:relative;
+    position:absolute;
     left:320px;
-    bottom: 5px;
+    
 }
 
 img[src*="carlostocat"]{
@@ -40,19 +54,39 @@ img[src*="carlostocat"]{
     border-style: solid;
     border-color:gainsboro;
     border-width: thin;
-    position: relative;
+    position: absolute;
     left: 640px;
     bottom: 379px;
 }
-img[src*="jeejkang"]{
+img[src*="jeejkang"]{ */
 
-}
+
 
 .authors img{
-    width: 30px;
+    width: 20px;
+    
+}
+.authors{
+    float: right;
+}
+.image-number{
+    
+   
+    
 }
 
-.image-number{
-    position:relative;
-    left: 320px
+.image-footer {
+    display: inline-block;
+    max-width:100% ;
+    font-size: 12px;
+    border-bottom-style: solid ;
+    border-bottom-width:thin ;
+    border-bottom-color:gainsboro ;
+    
 }
+
+.image-caption{
+    float: right;
+    margin-left: 15px;
+}
+    
