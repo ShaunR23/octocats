@@ -58,16 +58,51 @@ img[src*="carlostocat"]{
     left: 640px;
     bottom: 379px;
 }
-img[src*="jeejkang"]{ */
+ */
+
+ img[src*='JohnCreek']{
+    position: relative;
+    left: 70px;
+    
+    float: right;
+    padding-left: 3px;
+}
+
+img[src*='leereilly']{
+    position: relative;
+    left: 60px;
+    
+    float: right;
+    padding-left: 3px;
+}
+
+img[src*='tonyjaramillo']{
+    position: relative;
+    left: 60px;
+    
+    float: right;
+    padding-left: 3px;
+}
+
+img[src*='jeejkang']{
+    position: relative;
+    left:60px;
+    
+    float: right;
+    
+}
 
 
 
 .authors img{
     width: 20px;
     
+    
 }
 .authors{
-    float: right;
+    position: relative;
+    bottom: 20px;
+    
 }
 .image-number{
     
@@ -88,5 +123,6 @@ img[src*="jeejkang"]{ */
 .image-caption{
     float: right;
     margin-left: 15px;
+    
 }
     
