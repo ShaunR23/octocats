@@ -1,32 +1,54 @@
-*{
+* {
     box-sizing: border-box;
-    overflow: break-word;  
+    overflow: break-word;
     word-break: break-all;
-    
+
 }
-ul{
+
+ul {
     list-style: none;
+    /*padding: 0 */
 }
 
-.octodex{
+.octodex {
     display: inline-block;
-    
+
 }
 
-.octocat{
-display: inline-block;
-width: 20%
-   
+.octocat {
+    display: inline-block;
+    width: 30%
 }
 
-.octocat img{
-    max-width:100% ;
+.octocat > a{
+    display: inline-block;
+    border: solid 1 px #cacaca;
+    border-radius: 3px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.octocat img {
+    max-width: 100%;
     border-style: solid;
-    border-color:gainsboro;
+    border-color: gainsboro;
     border-width: thin;
 }
-    
-    
+
+.octocat img::a{
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: solid 10px;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    position: absolute;
+    top: 100%;
+    right: 1%;
+}
+
+
 
 
 /* img[src*="sarito"]{
@@ -60,69 +82,110 @@ img[src*="carlostocat"]{
 }
  */
 
- img[src*='JohnCreek']{
+/* img[src*='JohnCreek'] {
     position: relative;
     left: 70px;
-    
+
     float: right;
     padding-left: 3px;
 }
 
-img[src*='leereilly']{
+img[src*='leereilly'] {
     position: relative;
     left: 60px;
-    
+
     float: right;
     padding-left: 3px;
 }
 
-img[src*='tonyjaramillo']{
+img[src*='tonyjaramillo'] {
     position: relative;
     left: 60px;
-    
+
     float: right;
     padding-left: 3px;
 }
 
-img[src*='jeejkang']{
+img[src*='jeejkang'] {
     position: relative;
-    left:60px;
-    
+    left: 60px;
+
     float: right;
-    
-}
+
+} */
 
 
 
-.authors img{
+.authors img {
     width: 20px;
     
-    
+
+
 }
-.authors{
+
+.authors {
     position: relative;
     bottom: 20px;
-    
+
 }
-.image-number{
-    
-   
-    
+
+.image-number::before {
+content: '#';
 }
 
 .image-footer {
-    display: inline-block;
-    max-width:100% ;
+    max-width: 100%;
     font-size: 12px;
-    border-bottom-style: solid ;
-    border-bottom-width:thin ;
-    border-bottom-color:gainsboro ;
-    
+    border-bottom: solid 1px #cacaca;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    position: relative; 
 }
 
-.image-caption{
-    float: right;
-    margin-left: 15px;
-    
+.image-number{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0;
 }
-    
+
+.image-caption {
+    /* float: right; */
+    /* margin-left: 15px; */
+    text-align: right;
+
+}
+
+.octocat > a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* .octocat >a::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: solid 10px;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    makes arrow
+} */
+
+.authors >li >a {
+    display: inline-block;
+    width: 30%;
+}
+
+.authors{
+    display: inline-block;
+}
+
+.authors img {
+    vertical-align: middle;
+}
+
